@@ -1,0 +1,9 @@
+{
+  "name": "free-proxy-aggregator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "bun src/update.js",
+    "test": "bun test"
+  }
+}

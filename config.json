@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "name": "rola-ip",
+      "type": "daily_list_api",
+      "url": "https://rola-ip.co/api/external/free-proxy/daily-list",
+      "params": {
+        "min_uptime": 80,
+        "sort": "response_asc",
+        "status": 1,
+        "page_size": 100
+      }
+    }
+  ]
+}
