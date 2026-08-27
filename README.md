@@ -1,6 +1,7 @@
 # 免费代理聚合
 
-每天中国时间 10:00 自动拉取公开免费代理，过滤后写成订阅文件 `URI.txt`（整份列表的 Base64）。
+每天自动拉取公开免费代理，过滤后写成订阅文件 `URI.txt`（整份列表的 Base64）。
+action 的定时不准时，github 每天定时任务很多，平台只是在定时时间加入队列，什么时候执行看队列情况，不建议定一些整点，错开一点
 
 ## 使用前
 
@@ -19,7 +20,7 @@ git push -u origin main
 3. 打开仓库的 **Settings → Actions → General**，允许 GitHub Actions 读写仓库（Workflow permissions 选 Read and write）。
 4. 打开 **Actions**，手动运行一次 **Update proxies**，确认生成了 `URI.txt`。
 
-之后会在每天 02:00 UTC（中国时间 10:00）自动更新。也可以随时在 Actions 里手动触发。
+之后会每天自动更新。也可以随时在 Actions 里手动触发。
 
 ## 本地运行
 
